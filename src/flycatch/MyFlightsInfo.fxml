@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="401.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flycatch.MyFlightsInfoController">
+   <children>
+      <BorderPane prefHeight="401.0" prefWidth="442.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #2e497a;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="31.0" layoutY="11.0" prefHeight="38.0" prefWidth="153.0" stylesheets="@../res/styles.css" text="FLIGHT INFO">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.4730158851260231" endY="1.0" startY="1.0">
+                           <stops>
+                              <Stop color="#0676f6" />
+                              <Stop color="#00afff" offset="0.007662835249042145" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="341.0" prefWidth="129.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="66.0" layoutY="69.0" text="TicketID:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="68.0" layoutY="117.0" text="FlightID:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="tf" editable="false" layoutY="52.0" prefWidth="246.0" styleClass="form" stylesheets="@../res/styles.css" />
+                  <TextField fx:id="tf2" editable="false" layoutY="102.0" prefWidth="246.0" styleClass="form" stylesheets="@../res/styles.css" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flycatch.MainMenuController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="207.0" layoutY="-67.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #5581b4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="leave" fitHeight="22.0" fitWidth="22.0" layoutX="565.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../res/exit.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="reload" fitHeight="22.0" fitWidth="22.0" layoutX="527.0" layoutY="2.0" onMouseClicked="#updateTable" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../res/reload.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="wallet" layoutX="25.0" layoutY="4.0" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="walletLabel" layoutX="11.0" layoutY="5.0" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="43.0" prefWidth="525.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="136.0" stylesheets="@../res/styles.css" text="FLY CATCH">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.4730158851260231" endY="1.0" startY="1.0">
+                                 <stops>
+                                    <Stop color="#0676f6" />
+                                    <Stop color="#0676f6" offset="0.007662835249042145" />
+                                    <Stop color="#76b2f6" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <HBox.margin>
+                              <Insets left="170.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="hello" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" stylesheets="@../res/styles.css" textFill="#7b7b7b">
+                           <HBox.margin>
+                              <Insets left="55.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="menu" layoutX="14.0" layoutY="34.0" text="Menu" textFill="#7b7b7b">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../res/menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="menuBack" layoutX="14.0" layoutY="34.0" text="Menu" textFill="#7b7b7b">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../res/menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #5581b4;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#orderTicket" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" stylesheets="@../res/styles.css" text="Buy Ticket/s" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="leave1" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#myFlights" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" stylesheets="@../res/styles.css" text="My flights" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="leave11" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#wallet" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" stylesheets="@../res/styles.css" text="Cash deposit" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="leave12" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/wallet.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#myStats" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" stylesheets="@../res/styles.css" text="Statistics" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="leave13" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/statistics.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <bottom>
+            <Pane prefHeight="41.0" prefWidth="600.0" styleClass="paneBoottom" stylesheets="@../res/styles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="475.0" layoutY="8.0" text="Contacts: +351 271 693 002" textFill="#5581b4">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="477.0" layoutY="21.0" text="Email: flycatch@gmail.com" textFill="#5581b4">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <TableView fx:id="tableview" prefHeight="200.0" prefWidth="200.0" stylesheets="@../res/styles.css" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="origin" prefWidth="70.0" text="Origin" />
+                <TableColumn fx:id="destiny" prefWidth="70.0" text="Destiny" />
+                  <TableColumn fx:id="duration" prefWidth="55.0" text="Duration" />
+                  <TableColumn fx:id="date" prefWidth="70.0" text="Date" />
+                  <TableColumn fx:id="price" prefWidth="50.0" text="Price" />
+                  <TableColumn fx:id="capacity" prefWidth="98.0" text="More Info" />
+              </columns>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="5.0" right="5.0" top="20.0" />
+               </BorderPane.margin>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="599.0" style="-fx-background-color: #2e497a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flycatch.CancelFlightsController">
+   <children>
+      <Label layoutX="14.0" layoutY="6.0" prefHeight="38.0" prefWidth="155.0" stylesheets="@../res/styles.css" text="CANCELLATIONS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4730158851260231" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#0676f6" />
+                  <Stop color="#00afff" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="14.0" layoutY="83.0" text="Insert the flight ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf" layoutX="169.0" layoutY="81.0" prefHeight="25.0" prefWidth="118.0" />
+      <Label fx:id="message" layoutX="14.0" layoutY="259.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="75.0" text="Origin:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="381.0" layoutY="105.0" text="Destiny:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="374.0" layoutY="135.0" text="Duration:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="389.0" layoutY="167.0" text="Date:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="389.0" layoutY="195.0" text="Price:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="371.0" layoutY="228.0" text="Capacity:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="origin" layoutX="432.0" layoutY="75.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="destiny" layoutX="432.0" layoutY="105.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="duration" layoutX="432.0" layoutY="135.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="date" layoutX="432.0" layoutY="167.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="price" layoutX="432.0" layoutY="195.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="capacity" layoutX="432.0" layoutY="228.0" prefHeight="17.0" prefWidth="118.0" textFill="#fff8f8" />
+      <Button fx:id="cancell" layoutX="228.0" layoutY="123.0" mnemonicParsing="false" onAction="#deleteFlight" style="-fx-background-color: #f55151;" text="Cancel">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="search" layoutX="169.0" layoutY="123.0" mnemonicParsing="false" onAction="#showDetails" style="-fx-background-color: #99fcff;" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="644.0" prefWidth="1047.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flycatch.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="771.0" fitWidth="1047.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/bg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="77.0" layoutY="51.0" text="FLY CATCH">
+         <font>
+            <Font name="Eras Bold ITC" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4380952380952381" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#0060dd" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="emailField" layoutX="61.0" layoutY="209.0" opacity="0.95" prefHeight="38.0" prefWidth="215.0" promptText="Email" style="-fx-border-radius: 25px; -fx-border-color: #8bb0cf; -fx-background-color: transparent; -fx-text-inner-color: white;" />
+      <PasswordField fx:id="passField" layoutX="62.0" layoutY="259.0" prefHeight="38.0" prefWidth="215.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #8bb0cf; -fx-border-radius: 25px; -fx-text-inner-color: white;" />
+      <Label layoutX="300.0" layoutY="247.0" text="Don't have an account?" />
+      <Label fx:id="signUpHere" layoutX="319.0" layoutY="271.0" onMouseClicked="#goToRegister" stylesheets="@../res/styles.css" text="Sign up HERE!">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="signIn" layoutX="93.0" layoutY="312.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: #8bb0cf; -fx-border-color: #8bb0cf; -fx-border-radius: 5px; -fx-border-width: 2px;" styleClass="signIn" stylesheets="@../res/styles.css" text="SIGN IN" textFill="WHITE" />
+    </children>
+</AnchorPane>

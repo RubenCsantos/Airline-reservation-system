@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="599.0" style="-fx-background-color: #2e497a;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="flycatch.EditFlightsController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="155.0" stylesheets="@../res/styles.css" text="UPDATE FLIGHTS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4730158851260231" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#0676f6" />
+                  <Stop color="#00afff" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="40.0" layoutY="94.0" text="Insert the flight ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf" layoutX="182.0" layoutY="92.0" prefHeight="25.0" prefWidth="118.0" />
+      <Label layoutX="372.0" layoutY="62.0" text="Origin:" textFill="WHITE" />
+      <Label layoutX="369.0" layoutY="102.0" text="Destiny:" textFill="WHITE" />
+      <Label layoutX="362.0" layoutY="142.0" text="Duration:" textFill="WHITE" />
+      <Label layoutX="377.0" layoutY="182.0" text="Date:" textFill="WHITE" />
+      <Label layoutX="377.0" layoutY="222.0" text="Price:" textFill="WHITE" />
+      <Label layoutX="368.0" layoutY="258.0" text="Capacity:" textFill="WHITE" />
+      <Label fx:id="message" layoutX="40.0" layoutY="219.0" prefHeight="20.0" prefWidth="165.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="or" layoutX="423.0" layoutY="57.0" />
+      <TextField fx:id="de" layoutX="423.0" layoutY="98.0" />
+      <TextField fx:id="du" layoutX="423.0" layoutY="138.0" />
+      <TextField fx:id="pr" layoutX="423.0" layoutY="218.0" />
+      <TextField fx:id="ca" layoutX="423.0" layoutY="254.0" />
+      <DatePicker fx:id="da" layoutX="423.0" layoutY="178.0" prefWidth="149.0" />
+      <Button layoutX="179.0" layoutY="138.0" mnemonicParsing="false" onAction="#searchDetails" prefWidth="54.0" style="-fx-background-color: #99fcff;" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="246.0" layoutY="138.0" mnemonicParsing="false" onAction="#editedDetails" prefWidth="54.0" style="-fx-background-color: #face7d;" text="Edit">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

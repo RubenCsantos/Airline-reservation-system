@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="391.0" style="-fx-background-color: #2e497a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flycatch.StatisticsController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="155.0" stylesheets="@../res/styles.css" text="STATISTICS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4730158851260231" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#0676f6" />
+                  <Stop color="#00afff" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="121.0" layoutY="92.0" text="NUMBER OF FLIGHTS :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nFlights" layoutX="169.0" layoutY="112.0" prefHeight="107.0" prefWidth="54.0" textFill="#face7d">
+         <font>
+            <Font size="91.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="258.0" prefHeight="20.0" prefWidth="134.0" text="TOTAL AMMOUNT:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ammount" layoutX="37.0" layoutY="297.0" prefHeight="132.0" prefWidth="305.0" textFill="#face7d">
+         <font>
+            <Font size="91.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

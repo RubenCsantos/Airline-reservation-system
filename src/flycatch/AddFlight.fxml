@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="401.0" prefWidth="442.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="flycatch.AddFlightController">
+   <children>
+      <BorderPane prefHeight="401.0" prefWidth="442.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #2e497a;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="158.0" layoutY="11.0" prefHeight="38.0" prefWidth="127.0" stylesheets="@../res/styles.css" text="FLIGHT FORM">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.4730158851260231" endY="1.0" startY="1.0">
+                           <stops>
+                              <Stop color="#0676f6" />
+                              <Stop color="#00afff" offset="0.007662835249042145" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="301.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="301.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="15.0">
+                     <image>
+                        <Image url="@../res/contact-form%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="341.0" prefWidth="129.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="65.0" layoutY="57.0" text="Origin:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="65.0" layoutY="107.0" text="Destiny:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="65.0" layoutY="157.0" text="Duration:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="65.0" layoutY="207.0" text="Date:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="65.0" layoutY="257.0" text="Price:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="65.0" layoutY="307.0" text="Capacity:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="origin" layoutY="52.0" prefHeight="28.0" prefWidth="246.0" styleClass="form" stylesheets="@../res/styles.css" />
+                  <TextField fx:id="destiny" layoutY="102.0" prefHeight="28.0" prefWidth="246.0" styleClass="form" stylesheets="@../res/styles.css" />
+                  <TextField fx:id="duration" layoutY="152.0" prefHeight="28.0" prefWidth="246.0" styleClass="form" stylesheets="@../res/styles.css" />
+                  <DatePicker fx:id="date" layoutY="202.0" styleClass="dataPicker" stylesheets="@../res/styles.css" />
+                  <TextField fx:id="price" layoutY="252.0" prefHeight="28.0" prefWidth="56.0" styleClass="form" stylesheets="@../res/styles.css" />
+                  <TextField fx:id="capacity" layoutY="302.0" prefHeight="28.0" prefWidth="56.0" styleClass="form" stylesheets="@../res/styles.css" />
+                  <Label layoutX="60.0" layoutY="258.0" text="\$" />
+                  <Button fx:id="save" layoutX="164.0" layoutY="290.0" mnemonicParsing="false" onAction="#addFlightToDatabase" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #cef5d1; -fx-border-radius: 5px;" text="ADD">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel" layoutX="238.0" layoutY="290.0" mnemonicParsing="false" onAction="#cancelAdd" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #f7a8ac; -fx-border-radius: 5px;" text="CLEAR">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

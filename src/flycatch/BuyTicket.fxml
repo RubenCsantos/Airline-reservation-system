@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="599.0" style="-fx-background-color: #2e497a;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="flycatch.BuyTicketController">
+   <children>
+      <Label layoutX="14.0" layoutY="6.0" prefHeight="38.0" prefWidth="155.0" stylesheets="@../res/styles.css" text="ORDER TICKET'S">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4730158851260231" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#0676f6" />
+                  <Stop color="#00afff" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="idLabel" layoutX="14.0" layoutY="83.0" text="Insert the flight ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="169.0" layoutY="81.0" prefHeight="25.0" prefWidth="118.0" />
+      <Label layoutX="397.0" layoutY="75.0" text="Origin:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="393.0" layoutY="105.0" text="Destiny:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="386.0" layoutY="135.0" text="Duration:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="165.0" text="Date:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="195.0" text="Price:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="225.0" text="Capacity:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="origin" layoutX="447.0" layoutY="75.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="destiny" layoutX="447.0" layoutY="105.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="duration" layoutX="447.0" layoutY="140.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="date" layoutX="447.0" layoutY="166.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="price" layoutX="447.0" layoutY="194.0" prefHeight="17.0" prefWidth="118.0" textFill="WHITE" />
+      <Label fx:id="capacity" layoutX="447.0" layoutY="227.0" prefHeight="17.0" prefWidth="118.0" textFill="#fff8f8" />
+      <Button fx:id="searchButton" layoutX="169.0" layoutY="122.0" mnemonicParsing="false" onAction="#showDetails" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #99fcff;" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="orderButton" layoutX="169.0" layoutY="213.0" mnemonicParsing="false" onAction="#orderTickets" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #cef5d1;" text="Order" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="message" layoutX="14.0" layoutY="234.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="n" layoutX="169.0" layoutY="171.0" prefHeight="25.0" prefWidth="118.0" visible="false" />
+      <Label fx:id="labelN" layoutX="71.0" layoutY="174.0" text="Nº Tickets:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
