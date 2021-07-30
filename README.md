@@ -1,0 +1,2 @@
+# Airline-reservation-system
+It is a comprehensive passenger processing system that includes inventory, fares, e-ticket operations, and online transactions. The main features of the airline reservation system are:  Reservation and cancellation of the airline tickets. Automation of airline system functions. Perform transaction management and routing functions. Offer quick responses to customers. Maintain passenger records and report on the daily business transactions.
